@@ -27,6 +27,7 @@ namespace DelonixRegia_HMS_
             {
                 e.Cancel = true;
             }
+
             else
             {
                 e.Cancel = false;
@@ -156,13 +157,13 @@ namespace DelonixRegia_HMS_
                 conn = new SqlConnection();
                 conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
-                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Staff] WHERE [StaffID] = "+staffID +";", conn))
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Staff] WHERE [StaffID] = " + staffID + ";", conn))
                 {
                     a.Fill(t);
-                    dataGridView1.DataSource = t;
-                    
+                    dataGridView3.DataSource = t;
+
                 }
-                
+
                 conn.Close();
             }
             catch (SqlException ex)
@@ -170,13 +171,31 @@ namespace DelonixRegia_HMS_
                 throw ex;
             }
 
-            
+
             btnViewStaff.Visible = true;
         }
 
-        private void tabPage5_Click(object sender, EventArgs e)
+        private void btnRefreshDGV_Click(object sender, EventArgs e)
         {
-
+            //Check the availability of the hotel rooms
+            SqlConnection conn = null;
+            DataTable t = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Staff]", conn))
+                {
+                    a.Fill(t);
+                    dataGridView3.DataSource = t;
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
 
     }
