@@ -76,7 +76,7 @@ namespace DelonixRegia_HMS_
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //Store the variables
+            //Store the variables RoomInformation
             string RoomNum = tbxRoomNumber.Text;
             string FirstN = tbxFN.Text;
             string LastN = tbxLN.Text;
@@ -84,14 +84,29 @@ namespace DelonixRegia_HMS_
             string Email = tbxEmail.Text;
             string PostalCode = tbxPostal.Text;
             string CountryofOrigin = tbxCountry.Text;
-            string streetAdddr = tbxStreet.Text;
+            string streetAddr = tbxStreet.Text;
+            string CusID = "";
+            string Description = "";
 
-            //Call #3 method from the DBManager.
+            string bookingID = "";
+            string checkOut_Time = "";
+            string checkIn_Time = "";
+            string checkIn_Date = "";
+            string checkOut_Date = "";
+            string RoomID = "";
+
+
+            //Call #3 method from the DBManager
+            Customer cus = new Customer();
+
+            DbManager.insertCustomer(CusID, tbxFN.Text, tbxLN.Text, tbxPN.Text, tbxEmail.Text, tbxPostal.Text, tbxCountry.Text, tbxStreet.Text);
+            DbManager.insertBooking();
+
 
             //#1 Method insertCustomer
-            int rowsInserted = DbManager.insertCustomer(RoomNum, FirstN, LastN, PhoneNum, Email, streetAdddr, PostalCode, CountryofOrigin);
+            int rowsInserted = DbManager.insertCustomer(RoomNum, FirstN, LastN, PhoneNum, Email, streetAddr, PostalCode, CountryofOrigin);
             //#2 Method insertBooking
-
+            int rowsinserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, Description, RoomID, CusID);
             //#3 Method updateRoomInformationTable
 
             //if-else statement to show whether it is successful or not
@@ -117,6 +132,11 @@ namespace DelonixRegia_HMS_
         private void btnRetrieveH_Click(object sender, EventArgs e)
         {
             btnViewStaff.Visible = true;
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
         }
 
     }
