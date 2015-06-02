@@ -71,30 +71,36 @@ namespace DelonixRegia_HMS_.Class
             }
             return rowsinserted;
         }
-       
+
         //#3 Method updateRoomInformationTable
-       
-        public static void UpdateRoomInfousingRoomID(string RoomID)
+
+        public static int UpdateRoomInfousingRoomID(string RoomID, string CusID)
         {
             SqlConnection conn = null;
-
+            int rowsinserted = 1;
             try
-            {
+            {    //update vancancy with the customerID with the RoomID
                 conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                //comm.CommandText = "UPDATE RoomInformation (BookingID, CheckIn_Time, CheckOut_Time, CheckIn_Date, CheckOut_Date, Description, RoomID, CusID) ( VALUES (@firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
+                comm.CommandText = "UPDATE RoomInformation SET Vacancy= @CusID WHERE CusID='@cusID'";
                 comm.Parameters.AddWithValue("@roomid", RoomID);
+                comm.Parameters.AddWithValue("@CusID", CusID);
                 comm.ExecuteNonQuery();
                 conn.Close();
             }
             catch (Exception e)
             {
                 throw e;
+
             }
+            return rowsinserted;
         }
+
+        //retrieve 
     }
+
 }
 

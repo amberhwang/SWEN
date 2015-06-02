@@ -85,9 +85,10 @@ namespace DelonixRegia_HMS_
             string PostalCode = tbxPostal.Text;
             string CountryofOrigin = tbxCountry.Text;
             string streetAddr = tbxStreet.Text;
-            string CusID = "";
+            string CusID = "cus" + DateTime.Now.ToString("ddMMyyyyHHMMSS");
             string Description = "";
 
+            //store the variables Booking
             string bookingID = "";
             string checkOut_Time = "";
             string checkIn_Time = "";
@@ -95,16 +96,27 @@ namespace DelonixRegia_HMS_
             string checkOut_Date = "";
             string RoomID = "";
 
+            //store the variables for Customer
+            string cusID = "";
+            string f_Name = "";
+            string l_Name = "";
+            string phone_No = "";
+            string email = "";
+            string street_Add = "";
+            string postal_Code = "";
+            string country_Origin = "";
+
+            string vacancy = CusID;
 
             //Call #3 method from the DBManager
-            Customer cus = new Customer();
 
-            DbManager.insertCustomer(CusID, tbxFN.Text, tbxLN.Text, tbxPN.Text, tbxEmail.Text, tbxPostal.Text, tbxCountry.Text, tbxStreet.Text);
-            DbManager.insertBooking();
+            DbManager.insertCustomer(RoomNum, FirstN, tbxLN.Text, tbxPN.Text, tbxEmail.Text, tbxPostal.Text, tbxCountry.Text, tbxStreet.Text);
+
+            DbManager.insertBooking(bookingID, checkOut_Time, checkIn_Time, checkIn_Date, checkOut_Date, RoomID);
 
 
             //#1 Method insertCustomer
-            int rowsInserted = DbManager.insertCustomer(RoomNum, FirstN, LastN, PhoneNum, Email, streetAddr, PostalCode, CountryofOrigin);
+            int rowsInserted = DbManager.insertCustomer(cusID, f_Name, l_Name, phone_No, email, street_Add, postal_Code, country_Origin);
             //#2 Method insertBooking
             int rowsinserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, Description, RoomID, CusID);
             //#3 Method updateRoomInformationTable
