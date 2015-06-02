@@ -7,3 +7,6 @@ C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\Delon
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csproj.GenerateResource.Cache
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
+C:\Users\5\Desktop\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
+C:\Users\5\Desktop\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
+C:\Users\5\Desktop\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb

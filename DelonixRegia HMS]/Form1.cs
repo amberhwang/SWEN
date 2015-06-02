@@ -236,5 +236,32 @@ namespace DelonixRegia_HMS_
             }
 
         }
+
+        private void btnSearchDuties_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = null;
+            DataTable t = new DataTable();
+
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+
+                DateTime dt = dateTimePicker3.Value;
+
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT [StaffID], [Staff_FName], [Staff_LName], [Staff_Level], [Staff_DutyAssign] FROM [HouseKeeping] WHERE RoomCusDate =" + dt.ToString("dd-MM-yyyy") + " AND RoomCusTime = " + comboBox1.Text, conn))
+                {
+                    a.Fill(t);
+                    dataGridView1.DataSource = t;
+                }
+                conn.Close();
+            }
+
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
