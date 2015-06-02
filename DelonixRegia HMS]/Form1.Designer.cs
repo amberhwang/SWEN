@@ -106,13 +106,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.btnDisplay = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
-            this.btnGDisplay = new System.Windows.Forms.Button();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridViewHouseKeeping = new System.Windows.Forms.DataGridView();
             this.btnSearchDuties = new System.Windows.Forms.Button();
@@ -120,6 +113,13 @@
             this.label28 = new System.Windows.Forms.Label();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.btnDisplay = new System.Windows.Forms.Button();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.btnGDisplay = new System.Windows.Forms.Button();
+            this.tabPage12 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -137,11 +137,11 @@
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -886,6 +886,7 @@
             this.button3.TabIndex = 80;
             this.button3.Text = "Retrieve Data";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView5
             // 
@@ -907,9 +908,9 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(340, 51);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(61, 13);
+            this.label25.Size = new System.Drawing.Size(68, 13);
             this.label25.TabIndex = 77;
-            this.label25.Text = "________: ";
+            this.label25.Text = "CustomerID: ";
             // 
             // tabPage9
             // 
@@ -927,74 +928,6 @@
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Housekeeping Report";
             this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.btnDisplay);
-            this.tabPage10.Controls.Add(this.dataGridView6);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage10.TabIndex = 4;
-            this.tabPage10.Text = "Total Customer Report";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // btnDisplay
-            // 
-            this.btnDisplay.Location = new System.Drawing.Point(366, 28);
-            this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(226, 23);
-            this.btnDisplay.TabIndex = 3;
-            this.btnDisplay.Text = "Load Records";
-            this.btnDisplay.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(263, 73);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(441, 308);
-            this.dataGridView6.TabIndex = 2;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.dataGridView7);
-            this.tabPage11.Controls.Add(this.btnGDisplay);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage11.TabIndex = 5;
-            this.tabPage11.Text = "Guest Room Report";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(224, 64);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(441, 308);
-            this.dataGridView7.TabIndex = 3;
-            // 
-            // btnGDisplay
-            // 
-            this.btnGDisplay.Location = new System.Drawing.Point(362, 35);
-            this.btnGDisplay.Name = "btnGDisplay";
-            this.btnGDisplay.Size = new System.Drawing.Size(158, 23);
-            this.btnGDisplay.TabIndex = 2;
-            this.btnGDisplay.Text = "Load Report";
-            this.btnGDisplay.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage12.TabIndex = 6;
-            this.tabPage12.Text = "Room Availability Report";
-            this.tabPage12.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -1106,6 +1039,74 @@
             this.label29.TabIndex = 9;
             this.label29.Text = "Date:";
             // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.btnDisplay);
+            this.tabPage10.Controls.Add(this.dataGridView6);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage10.TabIndex = 4;
+            this.tabPage10.Text = "Total Customer Report";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // btnDisplay
+            // 
+            this.btnDisplay.Location = new System.Drawing.Point(366, 28);
+            this.btnDisplay.Name = "btnDisplay";
+            this.btnDisplay.Size = new System.Drawing.Size(226, 23);
+            this.btnDisplay.TabIndex = 3;
+            this.btnDisplay.Text = "Load Records";
+            this.btnDisplay.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(263, 73);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(441, 308);
+            this.dataGridView6.TabIndex = 2;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.dataGridView7);
+            this.tabPage11.Controls.Add(this.btnGDisplay);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage11.TabIndex = 5;
+            this.tabPage11.Text = "Guest Room Report";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Location = new System.Drawing.Point(224, 64);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(441, 308);
+            this.dataGridView7.TabIndex = 3;
+            // 
+            // btnGDisplay
+            // 
+            this.btnGDisplay.Location = new System.Drawing.Point(362, 35);
+            this.btnGDisplay.Name = "btnGDisplay";
+            this.btnGDisplay.Size = new System.Drawing.Size(158, 23);
+            this.btnGDisplay.TabIndex = 2;
+            this.btnGDisplay.Text = "Load Report";
+            this.btnGDisplay.UseVisualStyleBackColor = true;
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage12.TabIndex = 6;
+            this.tabPage12.Text = "Room Availability Report";
+            this.tabPage12.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1138,11 +1139,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).EndInit();
             this.tabPage10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPage11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).EndInit();
             this.ResumeLayout(false);
 
         }

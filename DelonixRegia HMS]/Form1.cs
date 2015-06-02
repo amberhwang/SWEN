@@ -263,5 +263,29 @@ namespace DelonixRegia_HMS_
                 throw ex;
             }
         }
+
+        //ber- room occupancy report
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = null;
+            DataTable d = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=PC;Initial Catalog=DRManagementDB;Integrated Security=True"; //yx database
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT [RoomOccID], [Daily], [Weekly], [Monthly], [Yearly] FROM [RoomOccupancyReport]", conn))
+                {
+
+                    a.Fill(d);
+                    dataGridView5.DataSource = d;
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
