@@ -52,6 +52,7 @@
     <Compile Include="Class\RoomOccupancyReport.cs" />
     <Compile Include="Class\RoomStatusReport.cs" />
     <Compile Include="Class\Staff.cs" />
+    <Compile Include="Class\TotalCustomerReport.cs" />
     <Compile Include="Class\Vanacy.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

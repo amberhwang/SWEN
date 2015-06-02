@@ -290,6 +290,33 @@ namespace DelonixRegia_HMS_.Class
             return vanacy;
 
         }
+        //insert totalcust report in db
+        public static int InsertTotalCustReport(string TotalCusID, string TotalCusDate, string TotalCusTime, string RoomID)
+        {
+            int rowsinserted = 0;
+
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "INSERT INTO [TotalCustomersReport](TotalCusID, TotalCusDate, TotalCusTime, RoomID)"
+                 + "VALUES (@TotalCusID, @TotalCusDate, @TotalCusTime, @RoomID)";
+                comm.Parameters.AddWithValue("@TotalCusID", TotalCusID);
+                comm.Parameters.AddWithValue("@TotalCusDate", TotalCusDate);
+                comm.Parameters.AddWithValue("@TotalCusTime", TotalCusTime);
+                comm.Parameters.AddWithValue("@RoomID", RoomID);
+                rowsinserted = comm.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return rowsinserted;
+        }
     }
 
 }
