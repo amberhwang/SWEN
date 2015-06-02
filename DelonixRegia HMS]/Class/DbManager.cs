@@ -99,7 +99,49 @@ namespace DelonixRegia_HMS_.Class
             return rowsinserted;
         }
 
-        //retrieve 
+        //Get Room By RoomID(ber)
+        public static Room GetRoomByRoomID(string roomID)
+        {
+
+            Room room = new Room();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT * FROM Room WHERE RoomID=@RoomID";
+                comm.Parameters.AddWithValue("@RoomID", roomID);
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    //private string roomID;
+                    //private string room_Type;
+                    //private string bed_Type;
+                    //private string room_Rates;
+                    //private string vacancy;
+                    //private string add_Remarks;
+                    //private int room_Level;
+                    //private int roomCapacity_People;
+
+                    room.RoomID = (string)dr["RoomID"];
+                    room.Room_Type = (string)dr["Room_Type"];
+                    room.Bed_Type = (string)dr["Bed_Type"];
+                    room.Room_Rates = (string)dr["Room_Rates"];
+                    room.Vacancy = (string)dr["Vacancy"];
+                    room.Add_Remarks = (string)dr["Add_Remarks"];
+                    room.Room_Level = (int)dr["Room_Level"];
+                    room.RoomCapacity_People = (int)dr["RoomCapacity_People"];
+                }
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return room; //??
+        }
     }
 
 }
