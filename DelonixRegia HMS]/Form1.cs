@@ -290,5 +290,29 @@ namespace DelonixRegia_HMS_
                 throw ex;
             }
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            string bookingID = tbxbookingID.Text;
+
+            SqlConnection conn = null;
+            DataTable t = new DataTable();
+
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("DELETE FROM [Booking] WHERE bookingID != " + bookingID, conn))
+                {
+                    lblResult.Text = "Booking deleted!";
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
