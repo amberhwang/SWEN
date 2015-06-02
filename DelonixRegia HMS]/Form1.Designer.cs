@@ -120,17 +120,22 @@
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.label29 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tbxTime = new System.Windows.Forms.TextBox();
+            this.tbxDate = new System.Windows.Forms.TextBox();
+            this.btnSaveReport = new System.Windows.Forms.Button();
             this.btnDisplay = new System.Windows.Forms.Button();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.btnGDisplay = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.btnSaveReport = new System.Windows.Forms.Button();
-            this.tbxDate = new System.Windows.Forms.TextBox();
-            this.tbxTime = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.tbxReportID = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.tbxRoomID = new System.Windows.Forms.TextBox();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -1112,6 +1117,11 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.dateTimePicker5);
+            this.tabPage10.Controls.Add(this.tbxRoomID);
+            this.tabPage10.Controls.Add(this.label35);
+            this.tabPage10.Controls.Add(this.label34);
+            this.tabPage10.Controls.Add(this.tbxReportID);
             this.tabPage10.Controls.Add(this.label33);
             this.tabPage10.Controls.Add(this.label32);
             this.tabPage10.Controls.Add(this.tbxTime);
@@ -1126,6 +1136,48 @@
             this.tabPage10.TabIndex = 4;
             this.tabPage10.Text = "Total Customer Report";
             this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(512, 184);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(95, 13);
+            this.label33.TabIndex = 8;
+            this.label33.Text = "Enter Current Time";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(512, 145);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(98, 13);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Enter Today\'s Date";
+            // 
+            // tbxTime
+            // 
+            this.tbxTime.Location = new System.Drawing.Point(512, 200);
+            this.tbxTime.Name = "tbxTime";
+            this.tbxTime.Size = new System.Drawing.Size(100, 20);
+            this.tbxTime.TabIndex = 6;
+            // 
+            // tbxDate
+            // 
+            this.tbxDate.Location = new System.Drawing.Point(512, 161);
+            this.tbxDate.Name = "tbxDate";
+            this.tbxDate.Size = new System.Drawing.Size(100, 20);
+            this.tbxDate.TabIndex = 5;
+            // 
+            // btnSaveReport
+            // 
+            this.btnSaveReport.Location = new System.Drawing.Point(505, 279);
+            this.btnSaveReport.Name = "btnSaveReport";
+            this.btnSaveReport.Size = new System.Drawing.Size(107, 23);
+            this.btnSaveReport.TabIndex = 4;
+            this.btnSaveReport.Text = "Save Report";
+            this.btnSaveReport.UseVisualStyleBackColor = true;
+            this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
             // 
             // btnDisplay
             // 
@@ -1184,46 +1236,44 @@
             this.tabPage12.Text = "Room Availability Report";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // btnSaveReport
+            // tbxReportID
             // 
-            this.btnSaveReport.Location = new System.Drawing.Point(505, 246);
-            this.btnSaveReport.Name = "btnSaveReport";
-            this.btnSaveReport.Size = new System.Drawing.Size(107, 23);
-            this.btnSaveReport.TabIndex = 4;
-            this.btnSaveReport.Text = "Save Report";
-            this.btnSaveReport.UseVisualStyleBackColor = true;
+            this.tbxReportID.Location = new System.Drawing.Point(512, 122);
+            this.tbxReportID.Name = "tbxReportID";
+            this.tbxReportID.Size = new System.Drawing.Size(100, 20);
+            this.tbxReportID.TabIndex = 9;
             // 
-            // tbxDate
+            // label34
             // 
-            this.tbxDate.Location = new System.Drawing.Point(512, 118);
-            this.tbxDate.Name = "tbxDate";
-            this.tbxDate.Size = new System.Drawing.Size(100, 20);
-            this.tbxDate.TabIndex = 5;
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(512, 106);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(81, 13);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "Enter Report ID";
             // 
-            // tbxTime
+            // label35
             // 
-            this.tbxTime.Location = new System.Drawing.Point(512, 200);
-            this.tbxTime.Name = "tbxTime";
-            this.tbxTime.Size = new System.Drawing.Size(100, 20);
-            this.tbxTime.TabIndex = 6;
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(512, 223);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(77, 13);
+            this.label35.TabIndex = 11;
+            this.label35.Text = "Enter Room ID";
             // 
-            // label32
+            // tbxRoomID
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(512, 99);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(98, 13);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Enter Today\'s Date";
+            this.tbxRoomID.Location = new System.Drawing.Point(512, 240);
+            this.tbxRoomID.Name = "tbxRoomID";
+            this.tbxRoomID.Size = new System.Drawing.Size(100, 20);
+            this.tbxRoomID.TabIndex = 12;
             // 
-            // label33
+            // dateTimePicker5
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(512, 184);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(95, 13);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "Enter Current Time";
+            this.dateTimePicker5.Location = new System.Drawing.Point(340, 51);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker5.TabIndex = 13;
             // 
             // Form1
             // 
@@ -1374,6 +1424,11 @@
         private System.Windows.Forms.TextBox tbxTime;
         private System.Windows.Forms.TextBox tbxDate;
         private System.Windows.Forms.Button btnSaveReport;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.TextBox tbxRoomID;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox tbxReportID;
     }
 }
 

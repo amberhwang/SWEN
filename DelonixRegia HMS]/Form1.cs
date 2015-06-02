@@ -337,5 +337,17 @@ namespace DelonixRegia_HMS_
                 throw ex;
             }
         }
+
+        private void btnSaveReport_Click(object sender, EventArgs e)
+        {
+            string reportid = tbxReportID.Text;
+            string date = tbxDate.Text;
+            string time = tbxTime.Text;
+            string roomid = tbxRoomID.Text;
+
+            DbManager.InsertTotalCustReport(tbxReportID.Text, tbxDate.Text, tbxTime.Text, tbxRoomID.Text);
+
+
+        }
     }
 }
