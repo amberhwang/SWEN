@@ -157,6 +157,31 @@ namespace DelonixRegia_HMS_.Class
             return rowsinserted;
         }
 
+        //Delete From booking 
+        public static int DeleteBooking(string RoomID)
+        {
+            SqlConnection conn = null;
+            int rowsinserted = 0;
+            try
+            {    //update vancancy with the customerID with the RoomID
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "DELETE Booking WHERE RoomID='@RoomID'";
+                comm.Parameters.AddWithValue("@roomid", RoomID);
+                rowsinserted = comm.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+            return rowsinserted;
+        }
+        
         //Get Room By RoomID(ber)
         public static Room GetRoomByRoomID(string roomID)
         {
