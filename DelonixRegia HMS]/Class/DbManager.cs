@@ -130,7 +130,32 @@ namespace DelonixRegia_HMS_.Class
 
             }
             return c;
-        } 
+        }
+
+        //update vacancy with the customerID with the RoomID
+        public static int UpdateVacancytonull(string RoomID)
+        {
+            SqlConnection conn = null;
+            int rowsinserted = 0;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "UPDATE RoomInformation SET Vacancy=null WHERE RoomID='@RoomID'";
+                comm.Parameters.AddWithValue("@roomid", RoomID);
+                rowsinserted = comm.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+            return rowsinserted;
+        }
 
         //Get Room By RoomID(ber)
         public static Room GetRoomByRoomID(string roomID)
@@ -209,7 +234,7 @@ namespace DelonixRegia_HMS_.Class
             return s1;
         }
 
-        //Get vanacy By CustomerID(ber)
+        //Get vacanacy By CustomerID(ber)
         public static Vanacy GetVanacyByCustomerID(string customerID)
         {
             Vanacy vanacy = new Vanacy();
