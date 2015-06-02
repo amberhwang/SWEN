@@ -175,6 +175,39 @@ namespace DelonixRegia_HMS_.Class
             }
             return room; //??
         }
+
+        public static Staff retrieveStaffDetails(string staffID)
+        {
+            Staff s1 = new Staff();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT * FROM Staff WHERE StaffID=@StaffID";
+                comm.Parameters.AddWithValue("@StaffID", staffID);
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    s1.StaffID = "12312321321321";//(string)dr["StaffID"];
+                    s1.Staff_FName = (string)dr["Staff_FName"];
+                    s1.Staff_LName = (string)dr["Staff_LName"];
+                    s1.Staff_PhoneNo = (int)dr["Staff_PhoneNo"];
+                    s1.Staff_Email = (string)dr["Staff_Email"];
+                    s1.Staff_PostalCode = (int)dr["Add_Remarks"];
+                    s1.StaffHomeAdd = (string)dr["Room_Level"];
+                    s1.Staff_CountryOrigin = (string)dr["RoomCapacity_People"];
+                }
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return s1;
+        }
     }
 
 }

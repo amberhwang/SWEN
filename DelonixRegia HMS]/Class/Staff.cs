@@ -34,6 +34,12 @@ namespace DelonixRegia_HMS_.Class
             this.staff_CountryOrigin = staff_CountryOrigin;
             this.staff_Level = staff_Level;
         }
+
+        public Staff()
+        {
+
+        }
+
         public string StaffID
         {
             get { return staffID; }

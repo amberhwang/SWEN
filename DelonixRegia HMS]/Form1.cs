@@ -198,14 +198,21 @@ namespace DelonixRegia_HMS_
             }
         }
 
-        private void btnDisplay_Click(object sender, EventArgs e)
+        private void btnViewStaff_Click(object sender, EventArgs e)
         {
-            
-        }
+            string staffID = textBox4.Text;
 
-        private void btnGDisplay_Click(object sender, EventArgs e)
-        {
-           
+            Staff s1 = new Staff();
+
+            s1 = DbManager.retrieveStaffDetails(staffID);
+
+            lblFN.Text = s1.Staff_FName;
+            lblLN.Text = s1.Staff_LName;
+            lblPN.Text = s1.Staff_PhoneNo.ToString();
+            lblEmail.Text = s1.Staff_Email;
+            lblPostal.Text = s1.Staff_PostalCode.ToString();
+            lblSA.Text = s1.StaffID;
+
         }
 
     }
