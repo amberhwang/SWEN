@@ -95,8 +95,9 @@ namespace DelonixRegia_HMS_
             string checkOut_Date = "";
             string RoomID = "";
 
+
             //store the variables for Customer
-            string cusID = "";
+
             string f_Name = "";
             string l_Name = "";
             string phone_No = "";
@@ -111,15 +112,15 @@ namespace DelonixRegia_HMS_
 
             DbManager.insertCustomer(RoomNum, FirstN, tbxLN.Text, tbxPN.Text, tbxEmail.Text, tbxPostal.Text, tbxCountry.Text, tbxStreet.Text);
 
-            DbManager.insertBooking(bookingID, checkOut_Time, checkIn_Time, checkIn_Date, checkOut_Date, RoomID);
+            DbManager.insertBooking(bookingID, checkOut_Time, checkIn_Time, checkIn_Date, checkOut_Date, RoomID, CusID, Description);
 
-
+            DbManager.retrieveCustomerIDusingCustomerName(tbxFN.Text, tbxLN.Text);
             //#1 Method insertCustomer
-            int rowsInserted = DbManager.insertCustomer(cusID, f_Name, l_Name, phone_No, email, street_Add, postal_Code, country_Origin);
+            int rowsInserted = DbManager.insertCustomer(CusID, f_Name, l_Name, phone_No, email, street_Add, postal_Code, country_Origin);
             //#2 Method insertBooking
-            int rowsinserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, Description, RoomID, CusID);
+            rowsInserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, RoomID, CusID, Description);
             //#3 Method updateRoomInformationTable
-
+            rowsInserted = DbManager.UpdateRoomInfousingRoomID(RoomID, CusID);
             //if-else statement to show whether it is successful or not
             if (rowsInserted == 1)
             {
@@ -137,6 +138,9 @@ namespace DelonixRegia_HMS_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //delete the booking based RoomID and set the vancacy = null
+
+
             MessageBox.Show("Successfully Checked Out");
         }
 

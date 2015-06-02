@@ -24,7 +24,7 @@ namespace DelonixRegia_HMS_.Class
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
                 comm.CommandText = "INSERT INTO [Customer](F_Name, L_Name, Phone_No, Email, Street_Add, Postal_Code, Country_Origin) ( VALUES (@firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
-                comm.Parameters.AddWithValue("@lastname", lastName);              
+                comm.Parameters.AddWithValue("@lastname", lastName);
                 comm.Parameters.AddWithValue("@firstname", firstName);
                 comm.Parameters.AddWithValue("@phonenumber", PhoneNum);
                 comm.Parameters.AddWithValue("@email", Email);
@@ -54,7 +54,8 @@ namespace DelonixRegia_HMS_.Class
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "INSERT INTO [Booking](BookingID, CheckIn_Time, CheckOut_Time, CheckIn_Date, CheckOut_Date, Description, RoomID, CusID) ( VALUES (@firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
+                comm.CommandText = "INSERT INTO [Booking](BookingID, CheckIn_Time, CheckOut_Time, CheckIn_Date, CheckOut_Date, Description, RoomID, CusID)"
+                 + "VALUES (@bookingid, @checkin_time, @checkout_time, @checkin_date, @checkout_date, @description, @roomid, @cusid)";
                 comm.Parameters.AddWithValue("@bookingid", bookingID);
                 comm.Parameters.AddWithValue("@checkin_time", checkIn_Time);
                 comm.Parameters.AddWithValue("@checkout_time", checkOut_Time);
@@ -77,7 +78,7 @@ namespace DelonixRegia_HMS_.Class
         public static int UpdateRoomInfousingRoomID(string RoomID, string CusID)
         {
             SqlConnection conn = null;
-            int rowsinserted = 1;
+            int rowsinserted = 0;
             try
             {    //update vancancy with the customerID with the RoomID
                 conn = new SqlConnection();
@@ -85,10 +86,10 @@ namespace DelonixRegia_HMS_.Class
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "UPDATE RoomInformation SET Vacancy= @CusID WHERE CusID='@cusID'";
+                comm.CommandText = "UPDATE RoomInformation SET Vacancy='@CusID' WHERE RoomID='@RoomID'";
                 comm.Parameters.AddWithValue("@roomid", RoomID);
                 comm.Parameters.AddWithValue("@CusID", CusID);
-                comm.ExecuteNonQuery();
+                rowsinserted = comm.ExecuteNonQuery();
                 conn.Close();
             }
             catch (Exception e)
@@ -98,6 +99,38 @@ namespace DelonixRegia_HMS_.Class
             }
             return rowsinserted;
         }
+
+        //retrieve CustomerID by reading in CustomerName
+        public static Customer retrieveCustomerIDusingCustomerName(string F_Name, string L_Name)
+        {
+            Customer c = new Customer();
+            SqlConnection conn = null;
+
+            try
+            {    //Select Customer ID using the Customer Name
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT CusID FROM Customer WHERE F_Name = @F_Name and WHERE L_Name = @L_Name";
+                comm.Parameters.AddWithValue("@F_Name", F_Name);
+                comm.Parameters.AddWithValue("@L_Name", L_Name);
+                SqlDataReader dr = comm.ExecuteReader();
+                conn.Close();
+                if (dr.Read())
+                {
+                    c.F_Name = (string)dr["F_Name"];
+                    c.L_Name = (string)dr["L_Name"];
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+            return c;
+        } 
 
         //Get Room By RoomID(ber)
         public static Room GetRoomByRoomID(string roomID)
