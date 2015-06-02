@@ -42,7 +42,6 @@ namespace DelonixRegia_HMS_
         {
             //Check the availability of the hotel rooms
             SqlConnection conn = null;
-            Room r1 = new Room();
             DataTable t = new DataTable();
             try
             {
@@ -143,6 +142,31 @@ namespace DelonixRegia_HMS_
 
         private void btnRetrieveH_Click(object sender, EventArgs e)
         {
+            string staffID = textBox4.Text;
+            //Retrieve Staff Information
+            //Check the availability of the hotel rooms
+            SqlConnection conn = null;
+            DataTable t = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Staff] WHERE [StaffID] = "+staffID +";", conn))
+                {
+                    a.Fill(t);
+                    dataGridView1.DataSource = t;
+                    
+                }
+                
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+            
             btnViewStaff.Visible = true;
         }
 
