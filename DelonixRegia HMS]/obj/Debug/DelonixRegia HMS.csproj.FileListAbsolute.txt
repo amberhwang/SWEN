@@ -1,30 +1,9 @@
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].pdb
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Form1.resources
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Properties.Resources.resources
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csproj.GenerateResource.Cache
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS]\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csprojResolveAssemblyReference.cache
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
-C:\Users\Phee Yong Xiang\Desktop\DelonixRegia HMS\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
-C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
-C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].pdb
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csprojResolveAssemblyReference.cache
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Form1.resources
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia_HMS_.Properties.Resources.resources
 C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csproj.GenerateResource.Cache
-C:\Users\user\Desktop\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
-C:\Users\user\Desktop\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
-C:\Users\user\Desktop\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
-<<<<<<< HEAD
-C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS.csprojResolveAssemblyReference.cache
-=======
-C:\Users\User\Documents\GitHub\SWEN\DelonixRegia HMS]\bin\Debug\DelonixRegia HMS].exe.config
-C:\Users\User\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
-C:\Users\User\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb
->>>>>>> origin/master
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].exe
+C:\Users\Phee Yong Xiang\Documents\GitHub\SWEN\DelonixRegia HMS]\obj\Debug\DelonixRegia HMS].pdb

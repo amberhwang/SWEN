@@ -161,7 +161,6 @@ namespace DelonixRegia_HMS_
                 {
                     a.Fill(t);
                     dataGridView3.DataSource = t;
-
                 }
 
                 conn.Close();
@@ -170,8 +169,6 @@ namespace DelonixRegia_HMS_
             {
                 throw ex;
             }
-
-
             btnViewStaff.Visible = true;
         }
 
@@ -215,5 +212,29 @@ namespace DelonixRegia_HMS_
 
         }
 
+        private void btnRetrieve_Click(object sender, EventArgs e)
+        {
+            DateTime dt = dateTimePicker4.Value;
+            string date = dt.ToString("dd-MM-yyyy");
+            SqlConnection conn = null;
+            DataTable t = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Booking] WHERE CheckIn_Date != " + date , conn))
+                {
+                    a.Fill(t);
+                    dataGridView2.DataSource = t;
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+        }
     }
 }

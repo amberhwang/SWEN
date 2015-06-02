@@ -517,6 +517,7 @@
             this.btnRetrieve.TabIndex = 61;
             this.btnRetrieve.Text = "Retrieve Records";
             this.btnRetrieve.UseVisualStyleBackColor = true;
+            this.btnRetrieve.Click += new System.EventHandler(this.btnRetrieve_Click);
             // 
             // button1
             // 
@@ -564,10 +565,12 @@
             // 
             // dateTimePicker4
             // 
+            this.dateTimePicker4.CustomFormat = "dd-MM-yyyy";
             this.dateTimePicker4.Location = new System.Drawing.Point(128, 47);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker4.TabIndex = 36;
+            this.dateTimePicker4.Value = new System.DateTime(2015, 6, 19, 0, 0, 0, 0);
             // 
             // tabPage3
             // 
