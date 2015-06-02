@@ -14,8 +14,8 @@ namespace DelonixRegia_HMS_.Class
         private string room_Rates;
         private string vacancy;
         private string add_Remarks;
-        private string room_Level;
-        private string roomCapacity_People;
+        private int room_Level;
+        private int roomCapacity_People;
 
         //ber
         public Room(string roomID, string room_Type, string bed_Type, string room_Rates, string vacancy, string add_Remarks, int room_Level, int roomCapacity_People)
@@ -70,13 +70,13 @@ namespace DelonixRegia_HMS_.Class
             set { add_Remarks = value; }
         }
 
-        public string Room_Level
+        public int Room_Level
         {
             get { return room_Level; }
             set { room_Level = value; }
         }
 
-        public string RoomCapacity_People
+        public int RoomCapacity_People
         {
             get { return roomCapacity_People; }
             set { roomCapacity_People = value; }
