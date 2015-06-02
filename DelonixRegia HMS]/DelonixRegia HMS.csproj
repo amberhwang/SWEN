@@ -49,6 +49,7 @@
     <Compile Include="Class\Customer.cs" />
     <Compile Include="Class\DbManager.cs" />
     <Compile Include="Class\Room.cs" />
+    <Compile Include="Class\RoomStatusReport.cs" />
     <Compile Include="Class\Staff.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
