@@ -141,6 +141,9 @@ namespace DelonixRegia_HMS_
         {
             //delete the booking based RoomID and set the vancacy = null
 
+            int rowsUpdated = DbManager.UpdateVacancytonull(tbxRoomNumber.Text);
+
+            rowsUpdated = DbManager.DeleteBooking(tbxRoomNumber.Text);
 
             MessageBox.Show("Successfully Checked Out");
         }
