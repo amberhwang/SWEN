@@ -109,13 +109,10 @@
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
-=======
             this.btnDisplay = new System.Windows.Forms.Button();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.btnGDisplay = new System.Windows.Forms.Button();
->>>>>>> origin/master
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -913,11 +910,8 @@
             // 
             // tabPage10
             // 
-<<<<<<< HEAD
-=======
             this.tabPage10.Controls.Add(this.btnDisplay);
             this.tabPage10.Controls.Add(this.dataGridView6);
->>>>>>> origin/master
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
@@ -928,11 +922,8 @@
             // 
             // tabPage11
             // 
-<<<<<<< HEAD
-=======
             this.tabPage11.Controls.Add(this.dataGridView7);
             this.tabPage11.Controls.Add(this.btnGDisplay);
->>>>>>> origin/master
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
@@ -951,8 +942,6 @@
             this.tabPage12.Text = "Room Availability Report";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-=======
             // btnDisplay
             // 
             this.btnDisplay.Location = new System.Drawing.Point(366, 28);
@@ -988,7 +977,6 @@
             this.btnGDisplay.Text = "Load Report";
             this.btnGDisplay.UseVisualStyleBackColor = true;
             // 
->>>>>>> origin/master
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1109,14 +1097,11 @@
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label25;
-<<<<<<< HEAD
         private System.Windows.Forms.Button btnRefreshDGV;
-=======
         private System.Windows.Forms.Button btnDisplay;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.Button btnGDisplay;
->>>>>>> origin/master
     }
 }
 
