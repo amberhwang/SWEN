@@ -17,9 +17,21 @@ namespace DelonixRegia_HMS_.Class
         private string room_Level;
         private string roomCapacity_People;
 
+        //ber
+        public Room(string roomID, string room_Type, string bed_Type, string room_Rates, string vacancy, string add_Remarks, int room_Level, int roomCapacity_People)
+        {
+            this.roomID = roomID;
+            this.room_Type = room_Type;
+            this.bed_Type = bed_Type;
+            this.room_Rates = room_Rates;
+            this.vacancy = vacancy;
+            this.add_Remarks = add_Remarks;
+            this.room_Level = room_Level;
+            this.RoomCapacity_People = roomCapacity_People;
+        }
+
         public Room()
         {
-
         }
 
         public string RoomID
