@@ -198,5 +198,15 @@ namespace DelonixRegia_HMS_
             }
         }
 
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnGDisplay_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }
