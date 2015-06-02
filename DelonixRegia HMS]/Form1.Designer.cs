@@ -72,6 +72,12 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.tbxbookingID = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnRefreshDGV = new System.Windows.Forms.Button();
             this.lblSA = new System.Windows.Forms.Label();
@@ -120,12 +126,11 @@
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.btnGDisplay = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.tbxbookingID = new System.Windows.Forms.TextBox();
-            this.lblResult = new System.Windows.Forms.Label();
+            this.btnSaveReport = new System.Windows.Forms.Button();
+            this.tbxDate = new System.Windows.Forms.TextBox();
+            this.tbxTime = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -134,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage13.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -148,7 +154,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            this.tabPage13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -588,6 +593,64 @@
             this.dateTimePicker4.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker4.TabIndex = 36;
             this.dateTimePicker4.Value = new System.DateTime(2015, 6, 19, 0, 0, 0, 0);
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Controls.Add(this.lblResult);
+            this.tabPage13.Controls.Add(this.buttonDelete);
+            this.tabPage13.Controls.Add(this.label31);
+            this.tabPage13.Controls.Add(this.label30);
+            this.tabPage13.Controls.Add(this.tbxbookingID);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1045, 414);
+            this.tabPage13.TabIndex = 2;
+            this.tabPage13.Text = "Cancel Booking";
+            this.tabPage13.UseVisualStyleBackColor = true;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(41, 157);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(0, 13);
+            this.lblResult.TabIndex = 8;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(41, 106);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 7;
+            this.buttonDelete.Text = "Submit";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(38, 63);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(153, 13);
+            this.label31.TabIndex = 6;
+            this.label31.Text = "Cancel booking by bookingID: ";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(38, 20);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(100, 13);
+            this.label30.TabIndex = 5;
+            this.label30.Text = "Cancel Booking:";
+            // 
+            // tbxbookingID
+            // 
+            this.tbxbookingID.Location = new System.Drawing.Point(197, 60);
+            this.tbxbookingID.Name = "tbxbookingID";
+            this.tbxbookingID.Size = new System.Drawing.Size(100, 20);
+            this.tbxbookingID.TabIndex = 4;
             // 
             // tabPage3
             // 
@@ -1049,6 +1112,11 @@
             // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.label33);
+            this.tabPage10.Controls.Add(this.label32);
+            this.tabPage10.Controls.Add(this.tbxTime);
+            this.tabPage10.Controls.Add(this.tbxDate);
+            this.tabPage10.Controls.Add(this.btnSaveReport);
             this.tabPage10.Controls.Add(this.btnDisplay);
             this.tabPage10.Controls.Add(this.dataGridView6);
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
@@ -1061,17 +1129,18 @@
             // 
             // btnDisplay
             // 
-            this.btnDisplay.Location = new System.Drawing.Point(366, 28);
+            this.btnDisplay.Location = new System.Drawing.Point(91, 51);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(226, 23);
             this.btnDisplay.TabIndex = 3;
-            this.btnDisplay.Text = "Load Records";
+            this.btnDisplay.Text = "Load Booking";
             this.btnDisplay.UseVisualStyleBackColor = true;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
             // 
             // dataGridView6
             // 
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(263, 73);
+            this.dataGridView6.Location = new System.Drawing.Point(35, 80);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(441, 308);
             this.dataGridView6.TabIndex = 2;
@@ -1115,63 +1184,46 @@
             this.tabPage12.Text = "Room Availability Report";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
-            // tabPage13
+            // btnSaveReport
             // 
-            this.tabPage13.Controls.Add(this.lblResult);
-            this.tabPage13.Controls.Add(this.buttonDelete);
-            this.tabPage13.Controls.Add(this.label31);
-            this.tabPage13.Controls.Add(this.label30);
-            this.tabPage13.Controls.Add(this.tbxbookingID);
-            this.tabPage13.Location = new System.Drawing.Point(4, 22);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(1045, 414);
-            this.tabPage13.TabIndex = 2;
-            this.tabPage13.Text = "Cancel Booking";
-            this.tabPage13.UseVisualStyleBackColor = true;
+            this.btnSaveReport.Location = new System.Drawing.Point(505, 246);
+            this.btnSaveReport.Name = "btnSaveReport";
+            this.btnSaveReport.Size = new System.Drawing.Size(107, 23);
+            this.btnSaveReport.TabIndex = 4;
+            this.btnSaveReport.Text = "Save Report";
+            this.btnSaveReport.UseVisualStyleBackColor = true;
             // 
-            // buttonDelete
+            // tbxDate
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(41, 106);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelete.TabIndex = 7;
-            this.buttonDelete.Text = "Submit";
-            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.tbxDate.Location = new System.Drawing.Point(512, 118);
+            this.tbxDate.Name = "tbxDate";
+            this.tbxDate.Size = new System.Drawing.Size(100, 20);
+            this.tbxDate.TabIndex = 5;
             // 
-            // label31
+            // tbxTime
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(38, 63);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(153, 13);
-            this.label31.TabIndex = 6;
-            this.label31.Text = "Cancel booking by bookingID: ";
+            this.tbxTime.Location = new System.Drawing.Point(512, 200);
+            this.tbxTime.Name = "tbxTime";
+            this.tbxTime.Size = new System.Drawing.Size(100, 20);
+            this.tbxTime.TabIndex = 6;
             // 
-            // label30
+            // label32
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(38, 20);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 13);
-            this.label30.TabIndex = 5;
-            this.label30.Text = "Cancel Booking:";
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(512, 99);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(98, 13);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Enter Today\'s Date";
             // 
-            // tbxbookingID
+            // label33
             // 
-            this.tbxbookingID.Location = new System.Drawing.Point(197, 60);
-            this.tbxbookingID.Name = "tbxbookingID";
-            this.tbxbookingID.Size = new System.Drawing.Size(100, 20);
-            this.tbxbookingID.TabIndex = 4;
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(41, 157);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 13);
-            this.lblResult.TabIndex = 8;
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(512, 184);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(95, 13);
+            this.label33.TabIndex = 8;
+            this.label33.Text = "Enter Current Time";
             // 
             // Form1
             // 
@@ -1192,6 +1244,8 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage13.ResumeLayout(false);
+            this.tabPage13.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1207,11 +1261,10 @@
             this.tabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).EndInit();
             this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.tabPage11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            this.tabPage13.ResumeLayout(false);
-            this.tabPage13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1316,6 +1369,11 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox tbxbookingID;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox tbxTime;
+        private System.Windows.Forms.TextBox tbxDate;
+        private System.Windows.Forms.Button btnSaveReport;
     }
 }
 

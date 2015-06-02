@@ -314,5 +314,28 @@ namespace DelonixRegia_HMS_
                 throw ex;
             }
         }
+
+        private void btnDisplay_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = null;
+            DataTable total = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=PC;Initial Catalog=DRManagementDB;Integrated Security=True";//change it
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT [CheckIn_Date], [Description], [RoomID], [CusID] FROM [Booking]", conn))
+                {
+
+                    a.Fill(total);
+                    dataGridView6.DataSource = total;
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
