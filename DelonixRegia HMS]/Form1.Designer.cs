@@ -73,7 +73,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.lblResult = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
@@ -141,7 +140,6 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -598,7 +596,6 @@
             // 
             // tabPage13
             // 
-            this.tabPage13.Controls.Add(this.dataGridView8);
             this.tabPage13.Controls.Add(this.lblResult);
             this.tabPage13.Controls.Add(this.buttonDelete);
             this.tabPage13.Controls.Add(this.label31);
@@ -611,14 +608,6 @@
             this.tabPage13.TabIndex = 2;
             this.tabPage13.Text = "Cancel Booking";
             this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView8
-            // 
-            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(47, 135);
-            this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(932, 271);
-            this.dataGridView8.TabIndex = 49;
             // 
             // lblResult
             // 
@@ -1209,7 +1198,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -1307,7 +1295,6 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox tbxbookingID;
         private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Button button2;

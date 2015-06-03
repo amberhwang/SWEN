@@ -305,14 +305,13 @@ namespace DelonixRegia_HMS_
             string bookingID = tbxbookingID.Text;
 
             SqlConnection conn = null;
-            DataTable t = new DataTable();
 
             try
             {
                 conn = new SqlConnection();
-                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.ConnectionString = "Data Source=SAMSUNG;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
-                using (SqlDataAdapter a = new SqlDataAdapter("DELETE FROM [Booking] WHERE bookingID != " + bookingID, conn))
+                using (SqlDataAdapter a = new SqlDataAdapter("DELETE * FROM [Booking] WHERE BookingID = '" + bookingID + "';", conn))
                 {
                     lblResult.Text = "Booking deleted!";
                 }
