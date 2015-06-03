@@ -368,7 +368,25 @@ namespace DelonixRegia_HMS_
 
         private void btnGDisplay_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = null;
+            DataTable gu = new DataTable();
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = "Data Source=PC;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.Open();
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [TotalCusPerRoomReport] ", conn))
+                {
 
+                    a.Fill(gu);
+                    dataGridView7.DataSource = gu;
+                }
+                conn.Close();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
         }
     }
 }
