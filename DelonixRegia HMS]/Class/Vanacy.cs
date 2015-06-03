@@ -12,16 +12,14 @@ namespace DelonixRegia_HMS_.Class
         private string daily;
         private string weekly;
         private string monthly;
-        private string yearly;
 
         //ber
-        public Vanacy(string roomOccID, string daily, string weekly, string monthly, string yearly)
+        public Vanacy(string roomOccID, string daily, string weekly, string monthly)
         {
             this.RoomOccID = RoomOccID;
             this.Daily = daily;
             this.Weekly = weekly;
             this.Monthly = monthly;
-            this.Yearly = yearly;
         }
 
         public Vanacy()

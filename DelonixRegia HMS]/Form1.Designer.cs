@@ -73,6 +73,7 @@
             this.label26 = new System.Windows.Forms.Label();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
             this.lblResult = new System.Windows.Forms.Label();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
@@ -100,42 +101,41 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label14 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridViewHouseKeeping = new System.Windows.Forms.DataGridView();
-            this.btnSearchDuties = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label29 = new System.Windows.Forms.Label();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tbxTime = new System.Windows.Forms.TextBox();
-            this.tbxDate = new System.Windows.Forms.TextBox();
-            this.btnSaveReport = new System.Windows.Forms.Button();
-            this.btnDisplay = new System.Windows.Forms.Button();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.btnGDisplay = new System.Windows.Forms.Button();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.btnDisplay = new System.Windows.Forms.Button();
+            this.btnSaveReport = new System.Windows.Forms.Button();
+            this.tbxDate = new System.Windows.Forms.TextBox();
+            this.tbxTime = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.tbxReportID = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.tbxRoomID = new System.Windows.Forms.TextBox();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btnSearchDuties = new System.Windows.Forms.Button();
+            this.dataGridViewHouseKeeping = new System.Windows.Forms.DataGridView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -145,20 +145,21 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).BeginInit();
-            this.tabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.tabPage11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabControl3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -601,6 +602,7 @@
             // 
             // tabPage13
             // 
+            this.tabPage13.Controls.Add(this.dataGridView8);
             this.tabPage13.Controls.Add(this.lblResult);
             this.tabPage13.Controls.Add(this.buttonDelete);
             this.tabPage13.Controls.Add(this.label31);
@@ -614,6 +616,14 @@
             this.tabPage13.Text = "Cancel Booking";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Location = new System.Drawing.Point(47, 135);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.Size = new System.Drawing.Size(932, 271);
+            this.dataGridView8.TabIndex = 49;
+            // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
@@ -624,12 +634,13 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(41, 106);
+            this.buttonDelete.Location = new System.Drawing.Point(41, 92);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 7;
             this.buttonDelete.Text = "Submit";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click_1);
             // 
             // label31
             // 
@@ -700,7 +711,7 @@
             // lblSA
             // 
             this.lblSA.AutoSize = true;
-            this.lblSA.Location = new System.Drawing.Point(946, 200);
+            this.lblSA.Location = new System.Drawing.Point(703, 261);
             this.lblSA.Name = "lblSA";
             this.lblSA.Size = new System.Drawing.Size(0, 13);
             this.lblSA.TabIndex = 90;
@@ -708,7 +719,7 @@
             // lblCO
             // 
             this.lblCO.AutoSize = true;
-            this.lblCO.Location = new System.Drawing.Point(928, 172);
+            this.lblCO.Location = new System.Drawing.Point(685, 233);
             this.lblCO.Name = "lblCO";
             this.lblCO.Size = new System.Drawing.Size(0, 13);
             this.lblCO.TabIndex = 89;
@@ -716,7 +727,7 @@
             // lblPostal
             // 
             this.lblPostal.AutoSize = true;
-            this.lblPostal.Location = new System.Drawing.Point(928, 142);
+            this.lblPostal.Location = new System.Drawing.Point(685, 203);
             this.lblPostal.Name = "lblPostal";
             this.lblPostal.Size = new System.Drawing.Size(0, 13);
             this.lblPostal.TabIndex = 88;
@@ -724,7 +735,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(700, 231);
+            this.lblEmail.Location = new System.Drawing.Point(691, 168);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(0, 13);
             this.lblEmail.TabIndex = 87;
@@ -732,7 +743,7 @@
             // lblPN
             // 
             this.lblPN.AutoSize = true;
-            this.lblPN.Location = new System.Drawing.Point(700, 203);
+            this.lblPN.Location = new System.Drawing.Point(691, 140);
             this.lblPN.Name = "lblPN";
             this.lblPN.Size = new System.Drawing.Size(0, 13);
             this.lblPN.TabIndex = 86;
@@ -740,7 +751,7 @@
             // lblLN
             // 
             this.lblLN.AutoSize = true;
-            this.lblLN.Location = new System.Drawing.Point(700, 172);
+            this.lblLN.Location = new System.Drawing.Point(691, 109);
             this.lblLN.Name = "lblLN";
             this.lblLN.Size = new System.Drawing.Size(0, 13);
             this.lblLN.TabIndex = 85;
@@ -748,7 +759,7 @@
             // lblFN
             // 
             this.lblFN.AutoSize = true;
-            this.lblFN.Location = new System.Drawing.Point(700, 138);
+            this.lblFN.Location = new System.Drawing.Point(691, 75);
             this.lblFN.Name = "lblFN";
             this.lblFN.Size = new System.Drawing.Size(0, 13);
             this.lblFN.TabIndex = 84;
@@ -757,7 +768,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label13.Location = new System.Drawing.Point(804, 164);
+            this.label13.Location = new System.Drawing.Point(568, 229);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(123, 17);
             this.label13.TabIndex = 83;
@@ -767,7 +778,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label17.Location = new System.Drawing.Point(830, 196);
+            this.label17.Location = new System.Drawing.Point(587, 257);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(110, 17);
             this.label17.TabIndex = 82;
@@ -777,7 +788,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label18.Location = new System.Drawing.Point(839, 138);
+            this.label18.Location = new System.Drawing.Point(596, 199);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(92, 17);
             this.label18.TabIndex = 81;
@@ -787,7 +798,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label19.Location = new System.Drawing.Point(609, 138);
+            this.label19.Location = new System.Drawing.Point(600, 75);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(84, 17);
             this.label19.TabIndex = 75;
@@ -797,7 +808,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label20.Location = new System.Drawing.Point(609, 168);
+            this.label20.Location = new System.Drawing.Point(600, 105);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(80, 17);
             this.label20.TabIndex = 74;
@@ -807,7 +818,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label21.Location = new System.Drawing.Point(582, 199);
+            this.label21.Location = new System.Drawing.Point(573, 136);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(107, 17);
             this.label21.TabIndex = 73;
@@ -817,7 +828,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label23.Location = new System.Drawing.Point(643, 227);
+            this.label23.Location = new System.Drawing.Point(634, 164);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(46, 17);
             this.label23.TabIndex = 72;
@@ -879,114 +890,156 @@
             this.tabPage4.Text = "Report";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabControl3
+            // tabPage11
             // 
-            this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Controls.Add(this.tabPage7);
-            this.tabControl3.Controls.Add(this.tabPage9);
-            this.tabControl3.Controls.Add(this.tabPage10);
-            this.tabControl3.Controls.Add(this.tabPage11);
-            this.tabControl3.Controls.Add(this.tabPage12);
-            this.tabControl3.Location = new System.Drawing.Point(7, 7);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1057, 443);
-            this.tabControl3.TabIndex = 0;
+            this.tabPage11.Controls.Add(this.dataGridView7);
+            this.tabPage11.Controls.Add(this.btnGDisplay);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage11.TabIndex = 5;
+            this.tabPage11.Text = "Guest Room Report";
+            this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // tabPage8
+            // btnGDisplay
             // 
-            this.tabPage8.Controls.Add(this.button2);
-            this.tabPage8.Controls.Add(this.dataGridView4);
-            this.tabPage8.Controls.Add(this.textBox3);
-            this.tabPage8.Controls.Add(this.label24);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage8.TabIndex = 1;
-            this.tabPage8.Text = "Room Status Report";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.btnGDisplay.Location = new System.Drawing.Point(362, 35);
+            this.btnGDisplay.Name = "btnGDisplay";
+            this.btnGDisplay.Size = new System.Drawing.Size(158, 23);
+            this.btnGDisplay.TabIndex = 2;
+            this.btnGDisplay.Text = "Load Report";
+            this.btnGDisplay.UseVisualStyleBackColor = true;
+            this.btnGDisplay.Click += new System.EventHandler(this.btnGDisplay_Click);
             // 
-            // button2
+            // dataGridView7
             // 
-            this.button2.Location = new System.Drawing.Point(558, 51);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 23);
-            this.button2.TabIndex = 76;
-            this.button2.Text = "Retrieve Data";
-            this.button2.UseVisualStyleBackColor = true;
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Location = new System.Drawing.Point(224, 64);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.Size = new System.Drawing.Size(441, 308);
+            this.dataGridView7.TabIndex = 3;
             // 
-            // dataGridView4
+            // tabPage10
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(254, 93);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(543, 271);
-            this.dataGridView4.TabIndex = 75;
+            this.tabPage10.Controls.Add(this.dateTimePicker5);
+            this.tabPage10.Controls.Add(this.tbxRoomID);
+            this.tabPage10.Controls.Add(this.tbxReportID);
+            this.tabPage10.Controls.Add(this.tbxTime);
+            this.tabPage10.Controls.Add(this.tbxDate);
+            this.tabPage10.Controls.Add(this.label35);
+            this.tabPage10.Controls.Add(this.label34);
+            this.tabPage10.Controls.Add(this.label33);
+            this.tabPage10.Controls.Add(this.label32);
+            this.tabPage10.Controls.Add(this.btnSaveReport);
+            this.tabPage10.Controls.Add(this.btnDisplay);
+            this.tabPage10.Controls.Add(this.dataGridView6);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage10.TabIndex = 4;
+            this.tabPage10.Text = "Total Customer Report";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // dataGridView6
             // 
-            this.textBox3.Location = new System.Drawing.Point(404, 51);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 20);
-            this.textBox3.TabIndex = 74;
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(35, 80);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(441, 308);
+            this.dataGridView6.TabIndex = 2;
             // 
-            // label24
+            // btnDisplay
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(346, 54);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(52, 13);
-            this.label24.TabIndex = 73;
-            this.label24.Text = "RoomID: ";
+            this.btnDisplay.Location = new System.Drawing.Point(91, 51);
+            this.btnDisplay.Name = "btnDisplay";
+            this.btnDisplay.Size = new System.Drawing.Size(226, 23);
+            this.btnDisplay.TabIndex = 3;
+            this.btnDisplay.Text = "Load Booking";
+            this.btnDisplay.UseVisualStyleBackColor = true;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
             // 
-            // tabPage7
+            // btnSaveReport
             // 
-            this.tabPage7.Controls.Add(this.button3);
-            this.tabPage7.Controls.Add(this.dataGridView5);
-            this.tabPage7.Controls.Add(this.textBox5);
-            this.tabPage7.Controls.Add(this.label25);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage7.TabIndex = 2;
-            this.tabPage7.Text = "Room Occupancy Report";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.btnSaveReport.Location = new System.Drawing.Point(505, 279);
+            this.btnSaveReport.Name = "btnSaveReport";
+            this.btnSaveReport.Size = new System.Drawing.Size(107, 23);
+            this.btnSaveReport.TabIndex = 4;
+            this.btnSaveReport.Text = "Save Report";
+            this.btnSaveReport.UseVisualStyleBackColor = true;
+            this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
             // 
-            // button3
+            // tbxDate
             // 
-            this.button3.Location = new System.Drawing.Point(552, 48);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 23);
-            this.button3.TabIndex = 80;
-            this.button3.Text = "Retrieve Data";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.tbxDate.Location = new System.Drawing.Point(512, 161);
+            this.tbxDate.Name = "tbxDate";
+            this.tbxDate.Size = new System.Drawing.Size(100, 20);
+            this.tbxDate.TabIndex = 5;
             // 
-            // dataGridView5
+            // tbxTime
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(254, 93);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(543, 271);
-            this.dataGridView5.TabIndex = 79;
+            this.tbxTime.Location = new System.Drawing.Point(512, 200);
+            this.tbxTime.Name = "tbxTime";
+            this.tbxTime.Size = new System.Drawing.Size(100, 20);
+            this.tbxTime.TabIndex = 6;
             // 
-            // textBox5
+            // label32
             // 
-            this.textBox5.Location = new System.Drawing.Point(398, 48);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(134, 20);
-            this.textBox5.TabIndex = 78;
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(512, 145);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(98, 13);
+            this.label32.TabIndex = 7;
+            this.label32.Text = "Enter Today\'s Date";
             // 
-            // label25
+            // label33
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(340, 51);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(68, 13);
-            this.label25.TabIndex = 77;
-            this.label25.Text = "CustomerID: ";
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(512, 184);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(95, 13);
+            this.label33.TabIndex = 8;
+            this.label33.Text = "Enter Current Time";
+            // 
+            // tbxReportID
+            // 
+            this.tbxReportID.Location = new System.Drawing.Point(512, 122);
+            this.tbxReportID.Name = "tbxReportID";
+            this.tbxReportID.Size = new System.Drawing.Size(100, 20);
+            this.tbxReportID.TabIndex = 9;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(512, 106);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(81, 13);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "Enter Report ID";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(512, 223);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(77, 13);
+            this.label35.TabIndex = 11;
+            this.label35.Text = "Enter Room ID";
+            // 
+            // tbxRoomID
+            // 
+            this.tbxRoomID.Location = new System.Drawing.Point(512, 240);
+            this.tbxRoomID.Name = "tbxRoomID";
+            this.tbxRoomID.Size = new System.Drawing.Size(100, 20);
+            this.tbxRoomID.TabIndex = 12;
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Location = new System.Drawing.Point(340, 51);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker5.TabIndex = 13;
             // 
             // tabPage9
             // 
@@ -1004,6 +1057,60 @@
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Housekeeping Report";
             this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(38, 64);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(33, 13);
+            this.label29.TabIndex = 9;
+            this.label29.Text = "Date:";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(77, 58);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker3.TabIndex = 10;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(38, 21);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(106, 13);
+            this.label28.TabIndex = 11;
+            this.label28.Text = "Duties allocation:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(315, 65);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(33, 13);
+            this.label27.TabIndex = 12;
+            this.label27.Text = "Time:";
+            // 
+            // btnSearchDuties
+            // 
+            this.btnSearchDuties.Location = new System.Drawing.Point(77, 106);
+            this.btnSearchDuties.Name = "btnSearchDuties";
+            this.btnSearchDuties.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchDuties.TabIndex = 13;
+            this.btnSearchDuties.Text = "Search";
+            this.btnSearchDuties.UseVisualStyleBackColor = true;
+            this.btnSearchDuties.Click += new System.EventHandler(this.btnSearchDuties_Click);
+            // 
+            // dataGridViewHouseKeeping
+            // 
+            this.dataGridViewHouseKeeping.BackgroundColor = System.Drawing.SystemColors.Info;
+            this.dataGridViewHouseKeeping.GridColor = System.Drawing.SystemColors.HotTrack;
+            this.dataGridViewHouseKeeping.Location = new System.Drawing.Point(41, 161);
+            this.dataGridViewHouseKeeping.Name = "dataGridViewHouseKeeping";
+            this.dataGridViewHouseKeeping.Size = new System.Drawing.Size(663, 231);
+            this.dataGridViewHouseKeeping.TabIndex = 8;
             // 
             // comboBox1
             // 
@@ -1062,218 +1169,114 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 14;
             // 
-            // dataGridViewHouseKeeping
+            // tabPage7
             // 
-            this.dataGridViewHouseKeeping.BackgroundColor = System.Drawing.SystemColors.Info;
-            this.dataGridViewHouseKeeping.GridColor = System.Drawing.SystemColors.HotTrack;
-            this.dataGridViewHouseKeeping.Location = new System.Drawing.Point(41, 161);
-            this.dataGridViewHouseKeeping.Name = "dataGridViewHouseKeeping";
-            this.dataGridViewHouseKeeping.Size = new System.Drawing.Size(663, 231);
-            this.dataGridViewHouseKeeping.TabIndex = 8;
+            this.tabPage7.Controls.Add(this.button3);
+            this.tabPage7.Controls.Add(this.dataGridView5);
+            this.tabPage7.Controls.Add(this.textBox5);
+            this.tabPage7.Controls.Add(this.label25);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Room Occupancy Report";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // btnSearchDuties
+            // label25
             // 
-            this.btnSearchDuties.Location = new System.Drawing.Point(77, 106);
-            this.btnSearchDuties.Name = "btnSearchDuties";
-            this.btnSearchDuties.Size = new System.Drawing.Size(75, 23);
-            this.btnSearchDuties.TabIndex = 13;
-            this.btnSearchDuties.Text = "Search";
-            this.btnSearchDuties.UseVisualStyleBackColor = true;
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(340, 51);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(68, 13);
+            this.label25.TabIndex = 77;
+            this.label25.Text = "CustomerID: ";
             // 
-            // label27
+            // textBox5
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(315, 65);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(33, 13);
-            this.label27.TabIndex = 12;
-            this.label27.Text = "Time:";
+            this.textBox5.Location = new System.Drawing.Point(398, 48);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(134, 20);
+            this.textBox5.TabIndex = 78;
             // 
-            // label28
+            // dataGridView5
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(38, 21);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(106, 13);
-            this.label28.TabIndex = 11;
-            this.label28.Text = "Duties allocation:";
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(254, 93);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(543, 271);
+            this.dataGridView5.TabIndex = 79;
             // 
-            // dateTimePicker3
+            // button3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(77, 58);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 10;
+            this.button3.Location = new System.Drawing.Point(552, 48);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 23);
+            this.button3.TabIndex = 80;
+            this.button3.Text = "Retrieve Data";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label29
+            // tabPage8
             // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(38, 64);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(33, 13);
-            this.label29.TabIndex = 9;
-            this.label29.Text = "Date:";
+            this.tabPage8.Controls.Add(this.button2);
+            this.tabPage8.Controls.Add(this.dataGridView4);
+            this.tabPage8.Controls.Add(this.textBox3);
+            this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1049, 417);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "Room Status Report";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
-            // tabPage10
+            // label24
             // 
-            this.tabPage10.Controls.Add(this.dateTimePicker5);
-            this.tabPage10.Controls.Add(this.tbxRoomID);
-            this.tabPage10.Controls.Add(this.label35);
-            this.tabPage10.Controls.Add(this.label34);
-            this.tabPage10.Controls.Add(this.tbxReportID);
-            this.tabPage10.Controls.Add(this.label33);
-            this.tabPage10.Controls.Add(this.label32);
-            this.tabPage10.Controls.Add(this.tbxTime);
-            this.tabPage10.Controls.Add(this.tbxDate);
-            this.tabPage10.Controls.Add(this.btnSaveReport);
-            this.tabPage10.Controls.Add(this.btnDisplay);
-            this.tabPage10.Controls.Add(this.dataGridView6);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage10.TabIndex = 4;
-            this.tabPage10.Text = "Total Customer Report";
-            this.tabPage10.UseVisualStyleBackColor = true;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(346, 54);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(52, 13);
+            this.label24.TabIndex = 73;
+            this.label24.Text = "RoomID: ";
             // 
-            // label33
+            // textBox3
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(512, 184);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(95, 13);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "Enter Current Time";
+            this.textBox3.Location = new System.Drawing.Point(404, 51);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(134, 20);
+            this.textBox3.TabIndex = 74;
             // 
-            // label32
+            // dataGridView4
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(512, 145);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(98, 13);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Enter Today\'s Date";
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(254, 93);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(543, 271);
+            this.dataGridView4.TabIndex = 75;
             // 
-            // tbxTime
+            // button2
             // 
-            this.tbxTime.Location = new System.Drawing.Point(512, 200);
-            this.tbxTime.Name = "tbxTime";
-            this.tbxTime.Size = new System.Drawing.Size(100, 20);
-            this.tbxTime.TabIndex = 6;
+            this.button2.Location = new System.Drawing.Point(558, 51);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 23);
+            this.button2.TabIndex = 76;
+            this.button2.Text = "Retrieve Data";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tbxDate
+            // tabControl3
             // 
-            this.tbxDate.Location = new System.Drawing.Point(512, 161);
-            this.tbxDate.Name = "tbxDate";
-            this.tbxDate.Size = new System.Drawing.Size(100, 20);
-            this.tbxDate.TabIndex = 5;
-            // 
-            // btnSaveReport
-            // 
-            this.btnSaveReport.Location = new System.Drawing.Point(505, 279);
-            this.btnSaveReport.Name = "btnSaveReport";
-            this.btnSaveReport.Size = new System.Drawing.Size(107, 23);
-            this.btnSaveReport.TabIndex = 4;
-            this.btnSaveReport.Text = "Save Report";
-            this.btnSaveReport.UseVisualStyleBackColor = true;
-            this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
-            // 
-            // btnDisplay
-            // 
-            this.btnDisplay.Location = new System.Drawing.Point(91, 51);
-            this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(226, 23);
-            this.btnDisplay.TabIndex = 3;
-            this.btnDisplay.Text = "Load Booking";
-            this.btnDisplay.UseVisualStyleBackColor = true;
-            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(35, 80);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(441, 308);
-            this.dataGridView6.TabIndex = 2;
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.dataGridView7);
-            this.tabPage11.Controls.Add(this.btnGDisplay);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage11.TabIndex = 5;
-            this.tabPage11.Text = "Guest Room Report";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView7
-            // 
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(224, 64);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(441, 308);
-            this.dataGridView7.TabIndex = 3;
-            // 
-            // btnGDisplay
-            // 
-            this.btnGDisplay.Location = new System.Drawing.Point(362, 35);
-            this.btnGDisplay.Name = "btnGDisplay";
-            this.btnGDisplay.Size = new System.Drawing.Size(158, 23);
-            this.btnGDisplay.TabIndex = 2;
-            this.btnGDisplay.Text = "Load Report";
-            this.btnGDisplay.UseVisualStyleBackColor = true;
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(1049, 417);
-            this.tabPage12.TabIndex = 6;
-            this.tabPage12.Text = "Room Availability Report";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // tbxReportID
-            // 
-            this.tbxReportID.Location = new System.Drawing.Point(512, 122);
-            this.tbxReportID.Name = "tbxReportID";
-            this.tbxReportID.Size = new System.Drawing.Size(100, 20);
-            this.tbxReportID.TabIndex = 9;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(512, 106);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(81, 13);
-            this.label34.TabIndex = 10;
-            this.label34.Text = "Enter Report ID";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(512, 223);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(77, 13);
-            this.label35.TabIndex = 11;
-            this.label35.Text = "Enter Room ID";
-            // 
-            // tbxRoomID
-            // 
-            this.tbxRoomID.Location = new System.Drawing.Point(512, 240);
-            this.tbxRoomID.Name = "tbxRoomID";
-            this.tbxRoomID.Size = new System.Drawing.Size(100, 20);
-            this.tbxRoomID.TabIndex = 12;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(340, 51);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker5.TabIndex = 13;
+            this.tabControl3.Controls.Add(this.tabPage8);
+            this.tabControl3.Controls.Add(this.tabPage7);
+            this.tabControl3.Controls.Add(this.tabPage9);
+            this.tabControl3.Controls.Add(this.tabPage10);
+            this.tabControl3.Controls.Add(this.tabPage11);
+            this.tabControl3.Location = new System.Drawing.Point(7, 7);
+            this.tabControl3.Name = "tabControl3";
+            this.tabControl3.SelectedIndex = 0;
+            this.tabControl3.Size = new System.Drawing.Size(1057, 443);
+            this.tabControl3.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1296,25 +1299,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            this.tabPage11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHouseKeeping)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabControl3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1386,26 +1390,26 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button btnRefreshDGV;
+        private System.Windows.Forms.TabPage tabPage13;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox tbxbookingID;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.DataGridView dataGridView8;
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.TabPage tabPage12;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Button btnRefreshDGV;
-        private System.Windows.Forms.Button btnDisplay;
-        private System.Windows.Forms.DataGridView dataGridView6;
-        private System.Windows.Forms.DataGridView dataGridView7;
-        private System.Windows.Forms.Button btnGDisplay;
+        private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridViewHouseKeeping;
         private System.Windows.Forms.Button btnSearchDuties;
@@ -1413,22 +1417,22 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TabPage tabPage13;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox tbxbookingID;
-        private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox tbxTime;
-        private System.Windows.Forms.TextBox tbxDate;
-        private System.Windows.Forms.Button btnSaveReport;
+        private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.TextBox tbxRoomID;
+        private System.Windows.Forms.TextBox tbxReportID;
+        private System.Windows.Forms.TextBox tbxTime;
+        private System.Windows.Forms.TextBox tbxDate;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox tbxReportID;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button btnSaveReport;
+        private System.Windows.Forms.Button btnDisplay;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.Button btnGDisplay;
     }
 }
 

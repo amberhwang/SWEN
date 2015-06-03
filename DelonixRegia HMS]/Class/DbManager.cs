@@ -11,7 +11,7 @@ namespace DelonixRegia_HMS_.Class
     class DbManager
     {
         //#1 Method insertCustomer
-        public static int insertCustomer(string RoomNumber, string firstName, string lastName, string PhoneNum, string Email, string streetAdd, string postalCode, string countryofOrigin)
+        public static int insertCustomer(string CusID, string firstName, string lastName, string PhoneNum, string Email, string streetAdd, string postalCode, string countryofOrigin)
         {
             int rowsinserted = 0;
 
@@ -23,10 +23,11 @@ namespace DelonixRegia_HMS_.Class
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "INSERT INTO [Customer](F_Name, L_Name, Phone_No, Email, Street_Add, Postal_Code, Country_Origin) ( VALUES (@firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
+                comm.CommandText = "INSERT INTO [Customer](CusID, F_Name, L_Name, Phone_No, Email, Street_Add, Postal_Code, Country_Origin) VALUES (@CusId, @firstName, @lastName, @PhoneNum, @Email, @streetAddress, @postalCode, @countryofOrigin)";
+                comm.Parameters.AddWithValue("@CusId", CusID);
                 comm.Parameters.AddWithValue("@lastname", lastName);
                 comm.Parameters.AddWithValue("@firstname", firstName);
-                comm.Parameters.AddWithValue("@phonenumber", PhoneNum);
+                comm.Parameters.AddWithValue("@PhoneNum", PhoneNum);
                 comm.Parameters.AddWithValue("@email", Email);
                 comm.Parameters.AddWithValue("@streetAddress", streetAdd);
                 comm.Parameters.AddWithValue("@postalcode", postalCode);
@@ -181,7 +182,7 @@ namespace DelonixRegia_HMS_.Class
             }
             return rowsinserted;
         }
-        
+
         //Get Room By RoomID(ber)
         public static Room GetRoomByRoomID(string roomID)
         {
@@ -247,9 +248,9 @@ namespace DelonixRegia_HMS_.Class
                     s1.Staff_LName = (string)dr["Staff_LName"];
                     s1.Staff_PhoneNo = (int)dr["Staff_PhoneNo"];
                     s1.Staff_Email = (string)dr["Staff_Email"];
-                    s1.Staff_PostalCode = (int)dr["Add_Remarks"];
-                    s1.StaffHomeAdd = (string)dr["Room_Level"];
-                    s1.Staff_CountryOrigin = (string)dr["RoomCapacity_People"];
+                    s1.Staff_PostalCode = (int)dr["Staff_PostalCode"];
+                    s1.StaffHomeAdd = (string)dr["StaffHomeAdd"];
+                    s1.Staff_CountryOrigin = (string)dr["Staff_CountryOrigin"];
                 }
             }
             catch (SqlException e)
@@ -318,6 +319,62 @@ namespace DelonixRegia_HMS_.Class
             return rowsinserted;
         }
 
+        public static bool Login(string username, string password)
+        {
+            SqlConnection conn = null;
+
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT * FROM [DRManagementDB].[dbo].[User] WHERE Username = '@customer';";
+                comm.Parameters.AddWithValue("@customer", username);
+                SqlDataReader dr = comm.ExecuteReader();
+                if(dr.Read())
+                {
+                    string pass = (string)dr["Password"];
+                    if(password == pass)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch(SqlException e)
+            {
+                throw e;
+            }
+            return true;
+        }
+
+        public static int DeleteEBooking(string bookingID)
+        {
+            SqlConnection conn = null;
+            int rowsUpdated = 0;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "DELETE FROM Booking WHERE BookingID='@bookingID'";
+                comm.Parameters.AddWithValue("@bookingID", bookingID);
+                rowsUpdated = comm.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            return rowsUpdated;
+        }
     }
 
 }

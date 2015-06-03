@@ -36,7 +36,12 @@ namespace DelonixRegia_HMS_
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            key = "Hello";
+            bool result = DbManager.Login(textBox1.Text, textBox2.Text);
+            if(result == true)
+            {
+                key = textBox1.Text;
+                MessageBox.Show("Success");
+            }
         }
 
         private void btnCheckAvailability_Click(object sender, EventArgs e)
@@ -89,39 +94,40 @@ namespace DelonixRegia_HMS_
             string Description = "";
 
             //store the variables Booking
-            string bookingID = "";
-            string checkOut_Time = "";
-            string checkIn_Time = "";
-            string checkIn_Date = "";
-            string checkOut_Date = "";
-            string RoomID = "";
+            string bookingID = "booking" + DateTime.Now.ToString("ddMMyyyyHHMMSS"); ;
 
+            DateTime dt = dateTimePicker1.Value;
+            string date = dt.ToString("dd-MM-yyyy");
+            string checkIn_Date = date;
+
+            string checkIn_Time = DateTime.Now.ToString("HH:mm:ss tt");
+            string checkOut_Time = DateTime.Now.ToString("HH:mm:ss tt");
+            
+            dt = dateTimePicker2.Value;
+            date = dt.ToString("dd-MM-yyyy");
+            string checkOut_Date = date;
+
+            string RoomID = tbxRoomNumber.Text;
 
             //store the variables for Customer
 
-            string f_Name = "";
-            string l_Name = "";
-            string phone_No = "";
-            string email = "";
-            string street_Add = "";
-            string postal_Code = "";
-            string country_Origin = "";
+            string f_Name = tbxFN.Text;
+            string l_Name = tbxLN.Text;
+            string phone_No = tbxPN.Text;
+            string email = tbxEmail.Text;
+            string street_Add = tbxStreet.Text;
+            string postal_Code = tbxPostal.Text;
+            string country_Origin = tbxCountry.Text;
 
             string vacancy = CusID;
 
             //Call #3 method from the DBManager
-
-            DbManager.insertCustomer(RoomNum, FirstN, tbxLN.Text, tbxPN.Text, tbxEmail.Text, tbxPostal.Text, tbxCountry.Text, tbxStreet.Text);
-
-            DbManager.insertBooking(bookingID, checkOut_Time, checkIn_Time, checkIn_Date, checkOut_Date, RoomID, CusID, Description);
-
-            DbManager.retrieveCustomerIDusingCustomerName(tbxFN.Text, tbxLN.Text);
             //#1 Method insertCustomer
-            int rowsInserted = DbManager.insertCustomer(CusID, f_Name, l_Name, phone_No, email, street_Add, postal_Code, country_Origin);
+            int rowsInserted = DbManager.insertCustomer(vacancy, f_Name, l_Name, phone_No, email, street_Add, postal_Code, country_Origin);
             //#2 Method insertBooking
-            rowsInserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, RoomID, CusID, Description);
+            rowsInserted = DbManager.insertBooking(bookingID, checkIn_Time, checkOut_Time, checkIn_Date, checkOut_Date, Description, RoomID, vacancy);
             //#3 Method updateRoomInformationTable
-            rowsInserted = DbManager.UpdateRoomInfousingRoomID(RoomID, CusID);
+            rowsInserted = DbManager.UpdateRoomInfousingRoomID(RoomID, vacancy);
             //if-else statement to show whether it is successful or not
             if (rowsInserted == 1)
             {
@@ -226,10 +232,11 @@ namespace DelonixRegia_HMS_
                 conn = new SqlConnection();
                 conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
-                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Booking] WHERE CheckIn_Date != " + date , conn))
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT * FROM [Booking] WHERE CheckIn_Date = '" + date +"';", conn))
                 {
                     a.Fill(t);
                     dataGridView2.DataSource = t;
+                    dataGridView8.DataSource = t;
                 }
                 conn.Close();
             }
@@ -275,7 +282,7 @@ namespace DelonixRegia_HMS_
             try
             {
                 conn = new SqlConnection();
-                conn.ConnectionString = "Data Source=PC;Initial Catalog=DRManagementDB;Integrated Security=True"; //yx database
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
                 using (SqlDataAdapter a = new SqlDataAdapter("SELECT [RoomOccID], [Daily], [Weekly], [Monthly], [Yearly] FROM [RoomOccupancyReport]", conn))
                 {
@@ -322,11 +329,10 @@ namespace DelonixRegia_HMS_
             try
             {
                 conn = new SqlConnection();
-                conn.ConnectionString = "Data Source=PC;Initial Catalog=DRManagementDB;Integrated Security=True";//change it
+                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
                 using (SqlDataAdapter a = new SqlDataAdapter("SELECT [CheckIn_Date], [Description], [RoomID], [CusID] FROM [Booking]", conn))
                 {
-
                     a.Fill(total);
                     dataGridView6.DataSource = total;
                 }
@@ -347,6 +353,21 @@ namespace DelonixRegia_HMS_
 
             DbManager.InsertTotalCustReport(tbxReportID.Text, tbxDate.Text, tbxTime.Text, tbxRoomID.Text);
 
+
+        }
+
+        private void buttonDelete_Click_1(object sender, EventArgs e)
+        {
+            DbManager.DeleteEBooking(tbxbookingID.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGDisplay_Click(object sender, EventArgs e)
+        {
 
         }
     }

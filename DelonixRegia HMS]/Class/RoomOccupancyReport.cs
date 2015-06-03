@@ -16,11 +16,11 @@ namespace DelonixRegia_HMS_.Class
 
         public RoomOccupancyReport(string RoomOccID, string Daily, string Weekly, string Monthly, string Yearly)
         {
-            this.roomOccID = roomOccID;
-            this.Daily = Daily;
-            this.Weekly = Weekly;
-            this.Monthly = Monthly;
-            this.yearly = Yearly;
+            this.RoomOccID = roomOccID;
+            this.Daily = daily;
+            this.Weekly = weekly;
+            this.Monthly = monthly;
+            this.Yearly = yearly;
         }
 
         public string RoomOccID
