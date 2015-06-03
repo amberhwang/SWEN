@@ -377,6 +377,39 @@ namespace DelonixRegia_HMS_.Class
             }
             return rowsUpdated;
         }
+
+        //Get housekeeping
+        public static HousekeepingReport GetHousekeepingReport()
+        {
+            HousekeepingReport hkeeping = new HousekeepingReport();
+            SqlConnection conn = null;
+            try
+            {
+                conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandText = "SELECT * FROM Housekeeping";
+                //comm.Parameters.AddWithValue("@StaffID", staffID);
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.Read())
+                {
+                    hkeeping.StaffID = (string)dr["StaffID"];
+                    hkeeping.Staff_FName = (string)dr["Staff_FName"];
+                    hkeeping.Staff_LName = (string)dr["Staff_LName"];
+                    hkeeping.Staff_Level = (string)dr["Staff_Level"];
+                    hkeeping.Staff_DutyAssign = (string)dr["Staff_DutyAssign"];
+                    hkeeping.Date = (string)dr["Date"];
+                    hkeeping.Time = (int)dr["Time"];
+                }
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return hkeeping;
+        }
     }
 
 }

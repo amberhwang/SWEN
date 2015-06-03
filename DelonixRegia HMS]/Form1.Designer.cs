@@ -113,13 +113,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridViewHouseKeeping = new System.Windows.Forms.DataGridView();
             this.btnSearchDuties = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label29 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.tbxRoomID = new System.Windows.Forms.TextBox();
@@ -1001,13 +997,9 @@
             // 
             // tabPage9
             // 
-            this.tabPage9.Controls.Add(this.comboBox1);
             this.tabPage9.Controls.Add(this.dataGridViewHouseKeeping);
             this.tabPage9.Controls.Add(this.btnSearchDuties);
-            this.tabPage9.Controls.Add(this.label27);
             this.tabPage9.Controls.Add(this.label28);
-            this.tabPage9.Controls.Add(this.dateTimePicker3);
-            this.tabPage9.Controls.Add(this.label29);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
@@ -1016,90 +1008,24 @@
             this.tabPage9.Text = "Housekeeping Report";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "0000",
-            "0030",
-            "0100",
-            "0130",
-            "0200",
-            "0230",
-            "0300",
-            "0330",
-            "0400",
-            "0430",
-            "0500",
-            "0530",
-            "0600",
-            "0630",
-            "0700",
-            "0730",
-            "0800",
-            "0830",
-            "0900",
-            "0930",
-            "1000",
-            "1030",
-            "1100",
-            "1130",
-            "1200",
-            "1230",
-            "1300",
-            "1330",
-            "1400",
-            "1430",
-            "1500",
-            "1530",
-            "1600",
-            "1630",
-            "1700",
-            "1730",
-            "1800",
-            "1830",
-            "1900",
-            "1930",
-            "2000",
-            "2030",
-            "2100",
-            "2130",
-            "2200",
-            "2230",
-            "2300",
-            "2330"});
-            this.comboBox1.Location = new System.Drawing.Point(355, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
             // dataGridViewHouseKeeping
             // 
             this.dataGridViewHouseKeeping.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridViewHouseKeeping.GridColor = System.Drawing.SystemColors.HotTrack;
-            this.dataGridViewHouseKeeping.Location = new System.Drawing.Point(41, 161);
+            this.dataGridViewHouseKeeping.Location = new System.Drawing.Point(41, 107);
             this.dataGridViewHouseKeeping.Name = "dataGridViewHouseKeeping";
-            this.dataGridViewHouseKeeping.Size = new System.Drawing.Size(663, 231);
+            this.dataGridViewHouseKeeping.Size = new System.Drawing.Size(711, 287);
             this.dataGridViewHouseKeeping.TabIndex = 8;
             // 
             // btnSearchDuties
             // 
-            this.btnSearchDuties.Location = new System.Drawing.Point(77, 106);
+            this.btnSearchDuties.Location = new System.Drawing.Point(41, 61);
             this.btnSearchDuties.Name = "btnSearchDuties";
             this.btnSearchDuties.Size = new System.Drawing.Size(75, 23);
             this.btnSearchDuties.TabIndex = 13;
             this.btnSearchDuties.Text = "Search";
             this.btnSearchDuties.UseVisualStyleBackColor = true;
             this.btnSearchDuties.Click += new System.EventHandler(this.btnSearchDuties_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(315, 65);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(33, 13);
-            this.label27.TabIndex = 12;
-            this.label27.Text = "Time:";
             // 
             // label28
             // 
@@ -1110,22 +1036,6 @@
             this.label28.Size = new System.Drawing.Size(106, 13);
             this.label28.TabIndex = 11;
             this.label28.Text = "Duties allocation:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(77, 58);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker3.TabIndex = 10;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(38, 64);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(33, 13);
-            this.label29.TabIndex = 9;
-            this.label29.Text = "Date:";
             // 
             // tabPage10
             // 
@@ -1410,13 +1320,9 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridViewHouseKeeping;
         private System.Windows.Forms.Button btnSearchDuties;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.DateTimePicker dateTimePicker5;
         private System.Windows.Forms.TextBox tbxRoomID;

@@ -255,15 +255,17 @@ namespace DelonixRegia_HMS_
             try
             {
                 conn = new SqlConnection();
-                conn.ConnectionString = "Data Source=YONGXIANG\\SQLEXPRESS;Initial Catalog=DRManagementDB;Integrated Security=True";
+                conn.ConnectionString = "Data Source=SAMSUNG;Initial Catalog=DRManagementDB;Integrated Security=True";
                 conn.Open();
 
-                DateTime dt = dateTimePicker3.Value;
-
-                using (SqlDataAdapter a = new SqlDataAdapter("SELECT [StaffID], [Staff_FName], [Staff_LName], [Staff_Level], [Staff_DutyAssign] FROM [HouseKeeping] WHERE RoomCusDate =" + dt.ToString("dd-MM-yyyy") + " AND RoomCusTime = " + comboBox1.Text, conn))
+                //DateTime dt = dateTimePicker3.Value;
+                DbManager.GetHousekeepingReport();
+                //"SELECT [StaffID], [Staff_FName], [Staff_LName], [Staff_Level], [Staff_DutyAssign] FROM [HouseKeeping] WHERE RoomCusDate =" + dt.ToString("dd-MM-yyyy") + " AND RoomCusTime = " + comboBox1.Text, conn)
+                using (SqlDataAdapter a = new SqlDataAdapter("SELECT [StaffID], [Staff_FName], [Staff_LName], [Staff_Level], [Staff_DutyAssign], [Date], [Time] FROM [Housekeeping]", conn))
                 {
+
                     a.Fill(t);
-                    dataGridView1.DataSource = t;
+                    dataGridViewHouseKeeping.DataSource = t;
                 }
                 conn.Close();
             }

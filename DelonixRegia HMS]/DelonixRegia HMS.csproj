@@ -48,6 +48,7 @@
     <Compile Include="Class\Booking.cs" />
     <Compile Include="Class\Customer.cs" />
     <Compile Include="Class\DbManager.cs" />
+    <Compile Include="Class\HousekeepingReport.cs" />
     <Compile Include="Class\Room.cs" />
     <Compile Include="Class\RoomOccupancyReport.cs" />
     <Compile Include="Class\RoomStatusReport.cs" />
