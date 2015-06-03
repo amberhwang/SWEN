@@ -12,14 +12,20 @@ namespace DelonixRegia_HMS_.Class
         private string daily;
         private string weekly;
         private string monthly;
+        private string yearly;
+        private string staff_Level;
+        private string roomID;
 
         //ber
-        public Vanacy(string roomOccID, string daily, string weekly, string monthly)
+        public Vanacy(string roomOccID, string daily, string weekly, string monthly, string yearly, string staff_Level, string roomID)
         {
             this.RoomOccID = RoomOccID;
             this.Daily = daily;
             this.Weekly = weekly;
             this.Monthly = monthly;
+            this.Yearly = yearly;
+            this.Staff_Level = staff_Level;
+            this.RoomID = roomID;
         }
 
         public Vanacy()
@@ -57,6 +63,20 @@ namespace DelonixRegia_HMS_.Class
         {
             get { return Yearly; }
             set { Yearly = value; }
+
+        }
+
+        public string Staff_Level
+        {
+            get { return Staff_Level; }
+            set { Staff_Level = value; }
+
+        }
+
+        public string RoomID
+        {
+            get { return RoomID; }
+            set { RoomID = value; }
 
         }
     }

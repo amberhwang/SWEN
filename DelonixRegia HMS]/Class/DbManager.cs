@@ -272,7 +272,7 @@ namespace DelonixRegia_HMS_.Class
                 conn.Open();
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
-                comm.CommandText = "SELECT * FROM Room WHERE CustomerID=@CustomerID";
+                comm.CommandText = "SELECT * FROM RoomOccpancyReport";
                 comm.Parameters.AddWithValue("@CustomerID", customerID);
                 SqlDataReader dr = comm.ExecuteReader();
                 if (dr.Read())
@@ -282,6 +282,8 @@ namespace DelonixRegia_HMS_.Class
                     vanacy.Weekly = (string)dr["Weekly"];
                     vanacy.Monthly = (string)dr["Monthly"];
                     vanacy.Yearly = (string)dr["Yearly"];
+                    vanacy.Staff_Level = (string)dr["Staff_Level"];
+                    vanacy.RoomID = (string)dr["RoomID"];
                 }
             }
             catch (SqlException e)

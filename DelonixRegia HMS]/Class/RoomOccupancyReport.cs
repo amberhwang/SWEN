@@ -13,14 +13,18 @@ namespace DelonixRegia_HMS_.Class
         private string weekly;
         private string monthly;
         private string yearly;
+        private string staff_Level;
+        private string roomID;
 
-        public RoomOccupancyReport(string RoomOccID, string Daily, string Weekly, string Monthly, string Yearly)
+        public RoomOccupancyReport(string RoomOccID, string Daily, string Weekly, string Monthly, string Yearly, string Staff_Level, string RoomID)
         {
             this.RoomOccID = roomOccID;
             this.Daily = daily;
             this.Weekly = weekly;
             this.Monthly = monthly;
-            this.Yearly = yearly;
+            this.Yearly = roomID;
+            this.Staff_Level = staff_Level;
+            this.RoomID = roomID;
         }
 
         public string RoomOccID
@@ -49,8 +53,20 @@ namespace DelonixRegia_HMS_.Class
 
         public string Yearly
         {
-            get { return yearly; }
-            set { yearly = value; }
+            get { return roomID; }
+            set { roomID = value; }
+        }
+
+        public string Staff_Level
+        {
+            get { return Staff_Level; }
+            set { Staff_Level = value; }
+        }
+
+        public string RoomID
+        {
+            get { return RoomID; }
+            set { RoomID = value; }
         }
     }
 }
